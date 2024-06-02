@@ -126,7 +126,7 @@
 
 .telegram-contain {
   text-align: center;
-  padding-top: 33px;
+  padding-top: 200px;
 }
 
 .c-wan {
@@ -179,13 +179,14 @@
 
 .suggest-title3 {
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .suggest-title4 {
   text-align: center;
   position: relative;
   bottom: 10px;
+  padding-top: 50px;
 }
 
 @media (max-width: 465px) {

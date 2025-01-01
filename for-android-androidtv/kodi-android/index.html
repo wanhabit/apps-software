@@ -57,7 +57,7 @@
     </div>
     <div class="telegram-contain">  
       <div class="suggest-media">Ikuti kami di <a href="https://t.me/wanencoded">telegram</a> untuk notifikasi film terbaru</div>
-      <div class="c-wan">&copy;2024 WAN&trade;</div>
+      <div class="c-wan">&copy;<span class="current-year"></span> WAN&trade;</div>
     </div>
     <div class="line-footer"></div>
 
@@ -82,6 +82,14 @@
                 copyButton.classList.remove("clicked");
             }, 2000);
       }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const yearElements = document.querySelectorAll('.current-year');
+        const currentYear = new Date().getFullYear();
+        yearElements.forEach(function(element) {
+          element.textContent = currentYear;
+        });
+      });
     </script>
   </body>
 </html>
